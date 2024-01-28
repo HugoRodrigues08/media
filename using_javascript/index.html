@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="images/icon0.png">
+    <title>Notas</title>
+
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="parteinicial">
+            <h1 class="PIparte2">INGRESSE NO ENSINO SUPERIOR EM 2024!!!</h1>
+            <div class="wrapper">
+                <div class="imagem_enem"></div>
+            </div>
+            <H1 class="PIparte3">Veja sua média e como ela pode ser util para você!</H1>
+            
+            <h2 class="PIparte2">O resultado do Enem 2023 pode ser utilizado para fazer graduação sem pagar mensalidade,
+                para conseguir financiamentos ou descontos parciais, assim como, para estudar na Europa, nos Estados
+                Unidos ou Canadá. Tudo isso a partir da sua nota na prova realizada em novembro do ano passado.</h2>
+                
+                <div class="wrapper_video">
+                    <video autoplay loop muted play-inline class="video_1"> <source src="images/j.mp4" type="video/mp4"></video>
+                </div>
+            <h2 class="PIparte1">Sua Nota pode servir para</h2>
+
+            <div class="parteprogramas">
+                <div class="programa_sisu">
+                    <div class="programaT">SISU</div>
+                    <div class="programaP">O Sistema de Seleção Unificada (SiSU) é realizado uma vez por ano e seleciona estudantes para universidades e instituições públicas de ensino superior. O SiSU é exclusivo para participantes da última edição do Enem que não tiveram nota zero na redação.</div>
+                </div>
+                <div class="programa_prouni">
+                    <div class="programaT">PROUNI</div>
+                    <div class="programaP">O ProUni, Programa Universidade para Todos, foi criado pelo Ministério da Educação (MEC) em 2004, por meio da Lei nº 11.096. O ProUni oferece bolsas de estudo em instituições de ensino superiores particulares de todo o Brasil.</div>
+                </div>
+                <div class="programa_fies">
+                    <div class="programaT">FIES</div>
+                    <div class="programaP">O Fies, Fundo de Financiamento Estudantil, é um programa do Ministério da Educação (MEC) que utiliza as notas do Exame Nacional do Ensino Médio (Enem) para selecionar estudantes com menor renda para o financiamento de cursos superiores em instituições particulares.</div>
+                </div>
+            </div>
+
+            <h1 class="PIparte1">Insira aqui a sua nota e veja o resultado</h1>
+        </div>
+        <div class="d-grid gap-2">
+
+            <button type="seen" id="abrirnotas" value="abrirnotas" class="btn btn-primary">Abrir</button>
+
+        </div>
+
+        <div id="inputnotas">
+            <form action="" method="get" class="row g-3">   
+                <div class="col-md-6">
+                    <label for="#NotaLinguagens" class="form-label">Nota de Linguagens</label>
+                    <Input type="text" name="#NotaLinguagens" id="#NotaLinguagens" placeholder="Nota de Linguagens"
+                        class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="#NotaHumanas" class="form-label">Nota de Humanas</label>
+                    <Input type="text" name="#NotaHumanas" id="#NotaHumanas" placeholder="Nota de Humanas"
+                        class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="#NotaNatureza" class="form-label">Nota de Natureza</label>
+                    <Input type="texe" name="#NotaNatureza" id="#NotaNatureza" placeholder="Nota de Natureza"
+                        class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="#NotaMatematica" class="form-label">Nota de Matematica</label>
+                    <Input type="text" name="#NotaMatematica" id="#NotaMatematica" placeholder="Nota de Matematica"
+                        class="form-control">
+                </div>
+                <div class="col-12">
+                    <label for="#NotaRedacao" class="form-label">Nota de Redação</label>
+                    <Input type="texet" name="#NotaRedacao" id="#NotaRedacao" placeholder="Nota de Redacao"
+                        class="form-control">
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" id="send" value="Enviar" class="btn btn-primary">Ver Nota</button>
+                </div>
+            </form>
+        </div>
+        <div id="resultadovalido">
+            <div>
+                <H2>Seu resultado</H2>
+            </div>
+
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Notas</th>
+                            <th scope="col">Média sem Redação</th>
+                            <th scope="col">Media com Redação</th>
+                            <th scope="col">Redação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Resultado</th>
+                            <td>
+                                <p id="MediaSR"></p>
+                            </td>
+                            <td>
+                                <p id="MediaCR"></p>
+                            </td>
+                            <td>
+                                <p id="NRedacao"></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div >
+                <h2 id="ReacaoBoa">Parabéns por tirar uma boa nota!</h2>
+                <h2 id="ReacaopB">Você podera aplicar para os programas!</h2>
+                <div class="wrapperR">
+                    <div class="imagem_RB"></div>
+                </div>
+            </div>
+            <div >
+                <h2 id="ReacaoRuim">Essa nota não foi muito boa!</h2>
+                <h2 id="ReacaopR">Você não podera aplicar para o programas!</h2>
+                <div class="wrapperR">
+                    <div class="imagem_RR"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div>
+            <H1 id="resultadoinvalido">Resultado invalido!</H1>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="basics.js"></script>
+</body>
+
+</html>
+ 
